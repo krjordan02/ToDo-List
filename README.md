@@ -5,7 +5,7 @@
 A ToDo List intended to remind the user of upcoming tasks.
 Built using React to practice building components in a CRUD model.
 
-<img src="ToDo-List_SC.jpg" width="300px"/>
+<img src="ToDo-List-SC.jpg" width="300px"/>
 
 ## Installation
 
