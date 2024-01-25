@@ -15,7 +15,7 @@ function App(){
   ]);
 
   const addTodo = text => {
-    const newTodos = [...todos, {text, isCompleted:false}];
+    const newTodos = [{text, isCompleted:false}, ...todos];
     setTodos(newTodos);
   }
   const removeTodo = index => {
@@ -27,10 +27,11 @@ function App(){
   return(
     <div className="app">
       <div className="todo-list" >
+        <TodoForm addTodo={addTodo} />
         {todos.map((todo, i) => (
           <Todo key={i} index={i} todo={todo} remove={removeTodo}/>
         ))}
-        <TodoForm addTodo={addTodo} />
+        
       </div>
     </div>
   );
